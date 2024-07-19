@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation first try</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <a href="#" class="logo">Ramadan</a>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Join us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+    <section id="hidden">
+      <h2 id="text">Ramadan Kareem</h2>
+      <img src="./media/01.png" alt="img1" id="img1" />
+      <img src="./media/02.png" alt="img2" id="img2" />
+      <img src="./media/03.png" alt="img3" id="img3" />
+      <img src="./media/04.png" alt="img4" />
+    </section>
+    <div class="showcase">
+      <h2>Scroll me now!</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil est quam
+        ipsa repellat quae reprehenderit velit ea, consequuntur, sint aliquam
+        quisquam, assumenda cum ullam quo reiciendis animi illum eaque libero.
+        Natus, minima illo! Pariatur quaerat a delectus quisquam quas, atque
+        facilis, animi culpa, odit consequatur impedit. Voluptatibus ipsam
+        laboriosam suscipit possimus, animi aliquid magni optio sed, tenetur
+        quis, eligendi nostrum iste dolore nulla facere nemo. Aliquid blanditiis
+        nulla vero non quam dolores accusamus! Mollitia, quidem eveniet minus
+        quibusdam incidunt nemo facere explicabo. Quis perferendis vel
+        laudantium consectetur velit exercitationem quam ab hic id cupiditate ad
+        <br />
+        <br />
+        a eligendi, ducimus animi quod, ipsa nisi quisquam error reiciendis,
+        consequuntur voluptas provident. Nemo repellendus soluta assumenda
+        labore culpa atque ipsam? Rem ipsam dolor veritatis tempora eum laborum,
+        impedit nobis similique iusto accusamus quod ex ducimus sequi sint quasi
+        qui distinctio ipsa consectetur quam repudiandae, deleniti obcaecati,
+        eaque vero. Doloremque quae magnam illo architecto! Quae exercitationem
+        illum consequuntur unde soluta rem necessitatibus iste, minus ratione,
+        sapiente odit dignissimos, rerum nihil doloribus nobis nostrum deleniti.
+        In rem, temporibus impedit maxime architecto asperiores culpa nobis
+        commodi quis expedita ab totam voluptas numquam quos deserunt, neque,
+        reiciendis quia unde exercitationem sapiente eos! Odio ea alias ratione
+        optio aliquid perspiciatis iusto iure! Nam, necessitatibus ipsa <br />
+        <br />
+        voluptatum unde voluptatem doloribus, eos quibusdam in illum placeat
+        explicabo! Pariatur explicabo tempore sint. Ea sunt rerum sequi facilis
+        aut ullam dolor, nobis, neque, dolorum a est labore hic asperiores
+        placeat optio doloribus odio blanditiis ipsum perferendis veniam facere
+        totam. In eius, voluptatibus temporibus facilis ab error aliquam eaque
+        omnis minus consectetur sunt rem fugiat, officia expedita magni
+        assumenda repudiandae sint maxime dicta libero, a quo suscipit hic
+        voluptatem. Velit exercitationem minus esse quae consectetur dolor
+        voluptate architecto veniam fugit, nobis corrupti ducimus rem ea id
+        voluptatum aspernatur numquam voluptates eius libero error, a adipisci.
+      </p>
+    </div>
+    <script>
+      let text = document.getElementById("text");
+      let img1 = document.getElementById("img1");
+      let img2 = document.getElementById("img2");
+      let img3 = document.getElementById("img3");
+
+      window.addEventListener("scroll", function () {
+        let value = window.scrollY;
+        text.style.marginTop = value * -1.5 + "px";
+        img1.style.top = value * 0.75 + "px";
+        img2.style.top = value * 0.25 + "px";
+        img3.style.top = value * 0.25 + "px";
+      });
+    </script>
+  </body>
+</html>
